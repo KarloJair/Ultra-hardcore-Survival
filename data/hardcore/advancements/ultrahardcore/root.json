@@ -4,7 +4,7 @@
             "item": "minecraft:iron_sword"
         },
         "title": {
-            "text":"First sunrise",
+            "text":"The beggining",
             "color": "white",
             "bold": true        
         },
@@ -34,13 +34,16 @@
         {
             "recipes": 
             [
-                "tutorial:newrecipe"
+                "hardcore:newrecipe"
             ],
             "loot": 
             [
                 "minecraft:entities/creeper"
             ],
-            "experience": 100
+            "experience": 100,
+            "function": "hardcore:play_sounds/firstadvancement"
+            
         }
+        
       
 }
