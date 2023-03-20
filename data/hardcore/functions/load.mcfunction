@@ -1,6 +1,7 @@
 tellraw @a {"text": "El datapack se ha iniciado","color": "Green","bold": true}
 time set 0d
 
+scoreboard objectives add Random dummy 
 scoreboard objectives add Time dummy "Time"
 scoreboard objectives add variables dummy
 

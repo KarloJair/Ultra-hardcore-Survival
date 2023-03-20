@@ -1,5 +1,6 @@
 {
     "values":[
-        "hardcore:loop"
+        "hardcore:loop",
+        "hardcore:random_events/controllers/random_event_controller"
     ]
 }
