@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_sword"
+        },
+        "title": {
+            "text":"First sunrise",
+            "color": "white",
+            "bold": true        
+        },
+        "description": {
+            "text": "You survived 10 days",
+            "italic": true
+        },
+        "frame":"goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background": "minecraft:textures/block/netherite_block.png"
+    },
+        "criteria": 
+        {
+          "survived10days": 
+          {
+            "trigger": "minecraft:impossible"
+          }
+        },
+        "requirements": 
+        [
+            [
+                "survived10days"
+            ]
+        ],
+        "rewards": 
+        {
+            "recipes": 
+            [
+                "tutorial:newrecipe"
+            ],
+            "loot": 
+            [
+                "minecraft:entities/creeper"
+            ],
+            "experience": 100
+        }
+      
+}
