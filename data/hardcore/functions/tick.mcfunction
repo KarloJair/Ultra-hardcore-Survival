@@ -1,4 +1,4 @@
-execute as @e[type=zombie, tag=!not_mob1,sort=random] at @s run function tutorial:mob1_spawn
+execute as @e[type=zombie, tag=!not_mob1,sort=random] at @s run function tutorial:mobs_spawn
 
 execute store result score $daytime Time run time query daytime
 execute store result score $day Time run time query day
