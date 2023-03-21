@@ -1,8 +1,13 @@
 tellraw @a {"text": "El datapack se ha iniciado","color": "Green","bold": true}
-time set 0d
+
 
 scoreboard objectives add Random dummy 
 scoreboard objectives add Time dummy "Time"
-scoreboard objectives add variables dummy
+scoreboard objectives add mobs dummy
+scoreboard objectives add gamemode_active dummy
 
-scoreboard players add mob1_count variables 0
+scoreboard players add value gamemode_active 0
+scoreboard players add mob1_count mobs 0
+
+
+

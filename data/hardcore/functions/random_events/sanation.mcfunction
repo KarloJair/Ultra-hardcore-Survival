@@ -1,0 +1,2 @@
+tellraw @p ["",{"text":"Has sido bendecido","italic":true,"color":"gold"},{"text":" La diosa de la vida te ha escuchado","bold":true,"color":"light_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Recibes 10 corazones en forma de regeneracion","color":"gray"}]}}]
+effect give @s minecraft:regeneration 6 3

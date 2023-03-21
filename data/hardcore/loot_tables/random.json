@@ -4,7 +4,7 @@
       {
         "rolls": {
           "min": 1,
-          "max": 5
+          "max": 20
         },
         "bonus_rolls": 1,
         "entries": [

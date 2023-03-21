@@ -1,0 +1,1 @@
+execute if score value gamemode_active matches 1 run function hardcore:loop

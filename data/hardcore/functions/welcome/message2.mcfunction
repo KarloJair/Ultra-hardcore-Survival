@@ -1,0 +1,2 @@
+tellraw @a {"text":"A partir de este momento, se experimentará un aumento progresivo en la dificultad del juego cada cierto número de días.","bold":true,"color":"#89aea6"} 
+schedule function hardcore:welcome/message3 5s
