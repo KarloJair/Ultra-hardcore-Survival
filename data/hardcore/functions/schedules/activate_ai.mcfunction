@@ -1,0 +1,1 @@
+execute as @e[type=zombie,tag=aioff] run data modify entity @s NoAI set value 0

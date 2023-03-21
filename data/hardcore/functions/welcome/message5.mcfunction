@@ -1,2 +1,3 @@
-execute at @a run title @a title {"text": "Day 0","color": "red","bold": true}
-playsound entity.lightning_bolt.thunder master @a
+tellraw @a [{"text":"Eventos aleatorios se ejecutaran a mediodia y medianoche.","bold":true,"color":"yellow"},{"text": " Recuerda llevar contigo un reloj :)","bold": true,"color": "gold"}]
+tellraw @a {"text": "Recibiras mas instrucciones pronto.","bold": true}
+schedule function hardcore:welcome/message6 4s

@@ -1,0 +1,2 @@
+tellraw @s ["",{"text":"Has sido bendecido","italic":true,"color":"gold"},{"text":" Tus ojos ahora de gato son","bold":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Recibes 1 minuto de visión nocturna","color":"green"}]}}]
+effect give @s night_vision 60 1

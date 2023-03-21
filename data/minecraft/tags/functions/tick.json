@@ -1,6 +1,5 @@
 {
     "values":[
-        "hardcore:is_gamemode_active",
-        "hardcore:random_events/controllers/random_event_controller"
+        "hardcore:is_gamemode_active"
     ]
 }
