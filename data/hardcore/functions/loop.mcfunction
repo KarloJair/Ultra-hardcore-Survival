@@ -11,8 +11,12 @@ execute if score $day Time matches 1.. run execute if predicate hardcore:10day r
 #en caso contrario imprime en el chat
 execute unless score $day Time matches 1 run execute unless predicate hardcore:10day run execute if predicate hardcore:newday run tellraw @a [{"text":"Dia ","bold":true,"color":"gray"},{"score":{"objective":"Time","name":"$day"},"bold":true,"color":"gray"}]
 
+#eventos
+execute at @a[x_rotation=45..] if predicate hardcore:overworlscheck run tellraw @a "test"
+
 #Solo avisos
 execute if predicate hardcore:newday run function hardcore:announcements
 
 #Advancements
 execute if score $day Time matches 10 run advancement grant @a only hardcore:ultrahardcore/root
+

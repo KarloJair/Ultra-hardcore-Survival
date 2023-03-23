@@ -1,0 +1,1 @@
+tellraw @s "bre_1 test"
