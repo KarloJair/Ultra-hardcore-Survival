@@ -5,5 +5,5 @@ execute if score @s Random matches 0 run function hardcore:random_events/blessin
 execute if score @s Random matches 1 run function hardcore:random_events/blessings/normal/eye_cats
 
 execute if score @s Random matches 2 run function hardcore:random_events/curses/normal/slowness
-execute if score @s Random matches 3 run function hardcore:random_events/curses/normal/cne
+execute if score @s Random matches 3 run function hardcore:random_events/curses/normal/mining_fatigue
 
