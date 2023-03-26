@@ -1,8 +1,13 @@
 
 execute as @e[type=zombie, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+execute as @e[type=zombie, tag=!tool_checked,sort=random] at @s run function hardcore:mob_carry_tool
+
 execute as @e[type=skeleton, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
 
-execute as @e[type=spider,tag=!checked] at @s run function hardcore:mobs_spawn
+execute as @e[type=spider,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+execute as @e[type=creeper,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+
+execute at @a run execute as @e[type=zombified_piglin,distance=..10] run function hardcore:mobs_spawn
 
 execute store result score $daytime Time run time query daytime
 execute store result score $day Time run time query day
@@ -21,5 +26,7 @@ execute unless score $day Time matches 1 run execute unless predicate hardcore:1
 execute if predicate hardcore:newday run function hardcore:announcements
 
 #Advancements
-execute if score $day Time matches 10 run advancement grant @a only hardcore:ultrahardcore/root
+execute if score $day Time matches 1 run advancement grant @a only hardcore:ultrahardcore/root
 
+
+scoreboard players operation @a playerTimeday = $day Time 

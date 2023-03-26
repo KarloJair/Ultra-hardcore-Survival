@@ -5,6 +5,8 @@ scoreboard objectives add Random dummy
 scoreboard objectives add Time dummy "Time"
 scoreboard objectives add mobs dummy
 
+scoreboard objectives add playerTimeday dummy
+
 scoreboard players add zombie1_count mobs 0
 scoreboard players add skeleton1_count mobs 0
 
