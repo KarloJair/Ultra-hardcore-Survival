@@ -1,1 +1,0 @@
-execute run scoreboard players set @s thunder_active 0

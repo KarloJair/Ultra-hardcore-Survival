@@ -1,3 +1,4 @@
+scoreboard players set @a range 10
 
 execute as @e[type=zombie, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
 execute as @e[type=zombie, tag=!tool_checked,sort=random] at @s run function hardcore:mob_carry_tool
@@ -30,3 +31,5 @@ execute if score $day Time matches 1 run advancement grant @a only hardcore:ultr
 
 
 scoreboard players operation @a playerTimeday = $day Time 
+
+execute as @a[scores={timer=1..}] run function hardcore:timerevent

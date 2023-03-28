@@ -1,0 +1,1 @@
+execute if entity @s[nbt={Inventory:[{id:"minecraft:obsidian"},{id:"minecraft:diamond"}]}] run function hardcore:recipes/test
