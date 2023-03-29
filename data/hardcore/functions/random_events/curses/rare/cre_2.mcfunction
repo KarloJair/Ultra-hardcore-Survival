@@ -1,1 +1,0 @@
-tellraw @s "cre_2 test"
