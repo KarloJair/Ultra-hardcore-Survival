@@ -24,7 +24,7 @@ execute unless score $day Time matches 1 run execute unless predicate hardcore:1
 #eventos
 
 #Solo avisos
-execute if predicate hardcore:newday run function hardcore:announcements
+execute if predicate hardcore:newday run function hardcore:messages/announcements
 
 #Advancements
 execute if score $day Time matches 1 run advancement grant @a only hardcore:ultrahardcore/root

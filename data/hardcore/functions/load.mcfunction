@@ -5,7 +5,8 @@ scoreboard objectives add Random dummy
 scoreboard objectives add Time dummy "Time"
 scoreboard objectives add mobs dummy
 scoreboard objectives add range dummy
-scoreboard objectives add timer dummy 
+scoreboard objectives add timer dummy
+scoreboard objectives add gamemode_active dummy
 
 scoreboard objectives add playerTimeday dummy
 
