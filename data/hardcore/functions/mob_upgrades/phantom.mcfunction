@@ -1,0 +1,2 @@
+execute if score $day Time matches 11.. if predicate hardcore:chances/25chance run summon phantom ~ ~ ~ {Tags:["checked"]}
+execute if score $day Time matches 11.. if predicate hardcore:chances/25chance run summon phantom ~ ~ ~ {Tags:["checked"]}

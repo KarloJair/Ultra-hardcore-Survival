@@ -1,12 +1,16 @@
+
+
 scoreboard players set @a range 10
+
+
 
 execute as @e[type=zombie, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
 execute as @e[type=zombie, tag=!tool_checked,sort=random] at @s run function hardcore:mob_carry_tool
-
 execute as @e[type=skeleton, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-
 execute as @e[type=spider,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
 execute as @e[type=creeper,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+execute as @e[type=enderman,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+execute as @e[type=phantom,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
 
 execute at @a run execute as @e[type=zombified_piglin,distance=..10] run function hardcore:mobs_spawn
 
@@ -28,6 +32,15 @@ execute if predicate hardcore:newday run function hardcore:messages/announcement
 
 #Advancements
 execute if score $day Time matches 1 run advancement grant @a only hardcore:ultrahardcore/root
+
+
+
+# Items
+
+execute as @a at @a run function hardcore:items/item_controller
+
+
+
 
 
 scoreboard players operation @a playerTimeday = $day Time 
