@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type_specific": {
+        "type": "player"
+      },
+      "equipment": {
+        "mainhand": {
+          "tag": "minecraft:tool"
+        },
+        "offhand": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "nbt": "{upgrade_fortune:1}"
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type_specific": {
+        "type": "player"
+      },
+      "equipment": {
+        "mainhand": {
+          "tag": "minecraft:armor"
+        },
+        "offhand": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "nbt": "{upgrade_blastprotection:1}"
+        }
+      }
+    }
+  }
+  
