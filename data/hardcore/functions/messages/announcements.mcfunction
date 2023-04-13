@@ -7,12 +7,14 @@
 
 
 
-execute if score $day Time matches 2 run tellraw @a {"text":"Zombies y esqueletos ahora pueden aparecer con armadura y armas","bold":true,"color":"#FFB20F"} 
+execute if score $day Time matches 2 run tellraw @a {"text":"Zombies y esqueletos han recibido una mejora de armamento","bold":true,"color":"#FFB20F"} 
 execute if score $day Time matches 3 run tellraw @a {"text":"Arañas tienen la posibilidad de recibir un boost de fuerza o velocidad","bold":true,"color":"#FFB20F"} 
-execute if score $day Time matches 4 run tellraw @a {"text":"Zombies y esqueletos con armadura y armas son mas frecuentes","bold":true,"color":"#FFB20F"} 
+execute if score $day Time matches 4 run tellraw @a {"text":"Zombies y esqueletos mejorados son mas frecuentes","bold":true,"color":"#FFB20F"} 
 
 execute if score $day Time matches 5 run tellraw @a {"text":"Eventos aleatorios desbloqueados","color":"#791CC4","bold": true,"hoverEvent":{"action":"show_text","contents":[{"text":"Los eventos pueden ejecutarse a media noche y medio dia con una probabiliadad del 50%, sus efectos pueden ser tanto beneficiosos como perjudiciales."}]}} 
 execute if score $day Time matches 5 run tellraw @a {"text":"Los zombies piglin se enfadaran contigo si te acercas.","bold":true,"color":"#FFB20F"} 
+
+execute if score $day Time matches 6 run tellraw @a {"text":"Zombies y esqueletos siempre llevaran mejor armamento","bold":true,"color":"#FFB20F"}
 
 execute if score $day Time matches 6 run tellraw @a {"text":"Manzanas apareceran con menor frecuencia en cofres","bold":true,"color":"#C2F970"}
 execute if score $day Time matches 7 run tellraw @a {"text":"Esqueletos y zombies han recibido mejoras","bold":true,"color":"#FFB20F"}
@@ -23,7 +25,7 @@ execute if score $day Time matches 8 run tellraw @a {"text":"Endermans hacen mas
 
 
 execute if score $day Time matches 10 run tellraw @a {"text":"Arañas reciben siempre fuerza o velocidad II","color":"#931621","bold":true}
-#execute if score $day Time matches 10 run tellraw @a {"text":"Zombies y esqueletos pueden recibir sets encantados","color":"#931621","bold":true}
+execute if score $day Time matches 10 run tellraw @a {"text":"Zombies y esqueletos obtienen mejora de armamento","color":"#931621","bold":true}
 execute if score $day Time matches 10 run tellraw @a {"text":"Creepers pueden spawnear como creepers electricos","color":"#931621","bold":true}
 
 

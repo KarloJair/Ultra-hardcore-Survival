@@ -4,15 +4,15 @@ scoreboard players set @a range 10
 
 
 
-execute as @e[type=zombie, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-execute as @e[type=zombie, tag=!tool_checked,sort=random] at @s run function hardcore:mob_carry_tool
-execute as @e[type=skeleton, tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-execute as @e[type=spider,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-execute as @e[type=creeper,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-execute as @e[type=enderman,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
-execute as @e[type=phantom,tag=!checked,sort=random] at @s run function hardcore:mobs_spawn
+execute as @e[type=zombie, tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
+execute as @e[type=zombie, tag=!tool_checked,sort=random] at @s run function hardcore:mob_upgrades/mob_carry_tool
+execute as @e[type=skeleton, tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
+execute as @e[type=spider,tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
+execute as @e[type=creeper,tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
+execute as @e[type=enderman,tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
+execute as @e[type=phantom,tag=!checked,sort=random] at @s run function hardcore:mob_upgrades/mobs_spawn
 
-execute at @a run execute as @e[type=zombified_piglin,distance=..10] run function hardcore:mobs_spawn
+execute at @a run execute as @e[type=zombified_piglin,distance=..10] run function hardcore:mob_upgrades/mobs_spawn
 
 execute store result score $daytime Time run time query daytime
 execute store result score $day Time run time query day
